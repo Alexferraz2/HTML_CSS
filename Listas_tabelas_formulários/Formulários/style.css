@@ -1,0 +1,20 @@
+section {
+    display: flex;
+    justify-content: center ;
+    align-items: start;   
+
+}
+
+div {
+    border: 1px solid #000;
+    width: 400px;
+
+}
+
+fieldset {
+    background-color: #ccc;
+}
+
+legend {
+    background-color: #999;
+}

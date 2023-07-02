@@ -1,0 +1,18 @@
+td {
+    border: 1px solid #000;
+    background-color: #999;
+    
+}
+
+table {
+    width: 70%;    
+}
+
+thead {
+    background-color: #777;
+}
+
+tbody td:hover {
+    background-color: #666;
+}
+
