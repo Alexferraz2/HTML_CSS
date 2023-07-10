@@ -1,0 +1,6 @@
+#teste {
+    width: 500px;
+    height: 200px;
+    background: rgb(36,22,0);
+    background: linear-gradient(0deg, rgba(36,22,0,1) 0%, rgba(121,88,9,1) 49%, rgba(255,163,0,1) 100%); 
+}

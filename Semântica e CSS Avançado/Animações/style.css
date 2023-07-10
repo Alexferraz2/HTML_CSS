@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes teste {
+    0% {background-color: #ff0000; top: 0; left: 0;}
+    25% {background-color: #0000ff; top: 0; left: 200px;}
+    50% {background-color: rgb(238, 238, 28); top: 200px; left: 200px;}
+    75% {background-color: rgb(19, 202, 193); top: 200px; left: 0;}
+    100% {background-color: #00ff00; top: 0; left: 0;}
+}
+
+#teste {
+    width: 200px;
+    height: 200px;
+    background-color: #00ff00;
+    position: absolute;
+    animation-name: teste;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+

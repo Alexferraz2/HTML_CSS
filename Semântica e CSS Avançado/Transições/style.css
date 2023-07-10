@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#teste {
+    width: 150px;
+    height: 150px;
+    background-color: #00ff00;
+    margin: auto;
+    margin-top: 100px;
+    transition: all 1s linear;
+}
+
+#teste:hover {
+    width: 200px;
+    height: 200px;
+    background-color: #074407;
+    border-radius: 50%;
+    
+}
