@@ -1,0 +1,15 @@
+/* Por padrão, quando atribuímos valores de border, margin e padding a um elemento, eles são somados à largura e altura, fazendo com que as dimensões totais superem os valores inicialmente esperados.
+
+Utilizando a propriedade box-sizing do CSS3, podemos fazer com que os valores de border, margin e padding sejam incorporados às dimensões originais do elemento, mantendo-o dentro dos limites informados em width e height. */
+
+*{
+    box-sizing: border-box;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    border: 10px solid #000;
+    
+}

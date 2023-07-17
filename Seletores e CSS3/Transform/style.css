@@ -1,0 +1,9 @@
+/* A propriedade CSS transform permite modificar o espaço coordenado do modelo de formatação CSS. Usando-a, elementos podem ser traduzidos, rotacionados, ter seu tamanho ajustado e inclinados de acordo com os valores definidos. */
+
+div {
+    background-color: #ff0000;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transform: scale(2, 3);
+}

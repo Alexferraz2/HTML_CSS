@@ -1,0 +1,36 @@
+input, a {
+    display: block;
+}
+
+/* Selecionando pelo atributo terá que mencionar o atributo entre cochetes, veja o exemplo abaixo: */
+
+[required] {
+    background-color: #0000ff;
+}
+
+input[type=password] {
+    background-color: #ff0000;
+}
+
+/*Para selecionar pelo atributo name, temos que colocar o valor entre aspas, pois não é um valor padrão, e sim um valor criado pelo próprio usuário*/
+input[name="usuario"] {
+    border-radius: 5px;
+}
+
+/* selecionar um elemento que tenha uma parte do texto */
+
+a[href*="supercopa"] {
+    background-color: #00ff00;
+}
+
+/* selecionar um elemento que comece com uma parte do texto */
+
+a[href^="www"] {
+    background-color: aqua;
+}
+
+/* selecionar um elemento que termine com uma parte do texto */
+
+a[href$="com"] {
+    background-color: #ff9900;
+}

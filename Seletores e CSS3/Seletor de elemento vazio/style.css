@@ -1,0 +1,10 @@
+div {
+    margin: 20px;
+    margin-top: 30px;
+}
+
+/* Selecionando elemento vazio ou seja que não tem conteúdo */
+
+div:empty {
+    background-color: #2b0505;
+}

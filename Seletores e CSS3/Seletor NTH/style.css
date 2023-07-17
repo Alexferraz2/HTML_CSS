@@ -1,0 +1,21 @@
+/* Selecionando com nth-child(ordem do elemento), ele vai na ordem crescente, e se usar nth-last-child(ordem do elemento) ele vai na ordem decrescente*/
+
+p:nth-child(1) {
+    background-color: #00ff00;
+}
+
+p:nth-child(2) {
+    background-color: #ff0800;
+}
+
+p:nth-child(3) {
+    background-color: #0004ff;
+}
+
+p:nth-child(4) {
+    background-color: #e9c917;
+}
+
+p:nth-child(5) {
+    background-color: #f700ff;
+}

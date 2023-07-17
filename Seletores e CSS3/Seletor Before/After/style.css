@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+/* O seletor before/after, irá selecionar um elementp que esteja antes/depois, para poder estilizar um elemento que esteja antes ou depois do elemento, se o elemento não existir ele será criado */
+
+span::before {
+    content: "->";
+    background-color: aqua;    
+}
+
+
+.balao {
+    background-color: #0000ff;
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+.balao::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+
+    border: 20px solid;
+    border-color: #0000ff transparent transparent transparent;
+}

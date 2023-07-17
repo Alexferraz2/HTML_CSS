@@ -1,0 +1,12 @@
+/* Selecionando e manipulando a primeira letra de um conteúdo */ 
+
+p::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Selecionando e manipulando a primeira linha de um conteúdo */ 
+
+p::first-line{
+    background-color: #ffe600;
+}

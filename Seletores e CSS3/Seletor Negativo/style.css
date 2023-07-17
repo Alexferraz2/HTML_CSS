@@ -1,0 +1,5 @@
+/* Selecionar todos os elementos excluindo um elemento, tem que que colocar o body antes dos : pois se não mencionar ele, ele não entrará na exlusão */
+
+body :not(p) {
+    background-color: #00ff00;
+}
