@@ -14,7 +14,7 @@ header {
 }
 .container {
     display: flex;
-    justify-content: space-between; /* fará divs ficarem ao lado da outra */
+    justify-content: space-between; /* fará divs ficarem ao lado da outra com espaços entre elas */
     width: 990px;
         
 }
