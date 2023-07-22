@@ -1,0 +1,26 @@
+.container {
+    background-color: #aaa;
+    display: grid;
+    grid-template-columns: repeat(2, 200px); /* A função repeat() do CSS é utilizada com propriedades, como grid-template-columns, para definir a estrutura repetida em um contêiner grid (elemento que tem display: grid). O exemplousando o repeat(2, 200px), que criará duas colunas de 200px, quando não souber a quantidade de elementos que caberão no grid, basta fazer da seguinte maneira repeat(auto-fill, 200px), que colocará no grid elementos com 200px até couberem no grid, quando não couber, ele passará para a linha de baixo */  
+
+    grid-auto-rows: minmax(50px, 100px); /* determina o valor mínimo e o máximo de um elemento do css grid */
+
+    grid-gap: 10px; /* o gap serve para criar espaçamento entre os elementos do grid, como informei apenas 10px, ele colocará 10px de espaço entre linhas e colunas, mas se eu informar assim gap: 10px 20px, ele colocará 10px para linhas e 20px para colunas */
+
+    justify-content: center; /* podemos posicionar os elementos como fazemos com o display: flex */
+    
+
+}
+
+.item {
+    background-color: #0000ff;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+}
+
+.item:hover {
+    background-color: #7a7abd;
+    transition: .5s;
+}

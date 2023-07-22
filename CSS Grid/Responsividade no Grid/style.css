@@ -1,0 +1,63 @@
+.container {
+    background-color: #aaa;
+    display: grid;
+    grid-gap: 10px; /* o gap serve para criar espaçamento entre os elementos do grid, como informei apenas 10px, ele colocará 10px de espaço entre linhas e colunas, mas se eu informar assim gap: 10px 20px, ele colocará 10px para linhas e 20px para colunas */
+    grid-template-columns: repeat(3, 1fr);
+   /* grid-template-areas: 
+    "header header header header header header header header"
+    "menu menu content content content content content content"
+    "ad ad content content content content content content"
+    "footer footer footer footer footer footer footer footer"
+
+    ;     */
+
+}
+
+.item {
+    background-color: #0000ff;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+}
+
+.item:hover {
+    background-color: #7a7abd;
+    transition: .5s;
+}
+
+/*
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: menu;
+}
+
+section {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.ad {
+    grid-area: ad;
+}
+
+*/
+
+@media (min-width: 601px ) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

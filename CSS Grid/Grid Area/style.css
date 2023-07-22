@@ -1,0 +1,75 @@
+.container {
+    background-color: #aaa;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* A função repeat() do CSS é utilizada com propriedades, como grid-template-columns, para definir a estrutura repetida em um contêiner grid (elemento que tem display: grid). O exemplousando o repeat(2, 200px), que criará duas colunas de 200px, quando não souber a quantidade de elementos que caberão no grid, basta fazer da seguinte maneira repeat(auto-fill, 200px), que colocará no grid elementos com 200px até couberem no grid, quando não couber, ele passará para a linha de baixo */  
+
+    /*grid-auto-rows: minmax(50px, 100px);  determina o valor mínimo e o máximo de um elemento do css grid */
+
+    grid-gap: 10px; /* o gap serve para criar espaçamento entre os elementos do grid, como informei apenas 10px, ele colocará 10px de espaço entre linhas e colunas, mas se eu informar assim gap: 10px 20px, ele colocará 10px para linhas e 20px para colunas */
+
+    justify-content: center; /* podemos posicionar os elementos como fazemos com o display: flex */
+    
+
+}
+
+.item {
+    background-color: #0000ff;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+}
+
+.item:hover {
+    background-color: #7a7abd;
+    transition: .5s;
+}
+
+/* oexemplo abaixo fará com o elemento ocupe a coluna 1 a 3 */
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* no exemplo abaixo o item 3 irá ocupar a coluna de 1 a 3 e as linhas 2 e 4 */
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/* no exemplo abaixo irei alterar a posição do ítem 4 para a posição do ítem 10 */
+
+.item4 {
+    background-color: #ff9100;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+}
+
+/* para fazer os códigos acima de forma resumida, podemos usar da seguinte maneira, que ele pegará da primeira linha da coluna até a última linha */
+
+.item10 {
+    grid-column: 1 / 4; 
+}
+
+/* no exemplo abaixo ele faz a mesma coisa do exemplo acima, mas ele usa o span para dizer que o elemento irá até o final do elemento informado após o span, que no caso do exemplo abaixo é o 2 */
+/*
+.item9 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 5;
+}
+*/
+
+/* o grid-area fará a mesma coisa que o exemplo acima, mas com apenas uma linha, seguinde a sequência abaixo:
+1º grid-row-start
+2º grid-column-start
+3º grid-row-end
+4º grid-column-end */
+
+.item9 {
+    grid-area: 4 / 1 / span 5 / span 2;
+}
